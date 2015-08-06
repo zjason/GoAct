@@ -37,7 +37,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/add"
+            android:background="@drawable/new"
             android:layout_weight="0.2"
             android:id="@+id/imageButton3" />
 
@@ -51,7 +51,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/setting"
+            android:background="@drawable/settings"
             android:layout_weight="0.2"
             android:id="@+id/imageButton5" />
     </LinearLayout>
