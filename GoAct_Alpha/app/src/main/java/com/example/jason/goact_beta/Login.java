@@ -1,10 +1,13 @@
 package com.example.jason.goact_beta;
 
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class Login extends Activity {
@@ -12,7 +15,27 @@ public class Login extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //getActionBar().hide();
         setContentView(R.layout.activity_login);
+        ImageButton register = (ImageButton) findViewById(R.id.register);
+        ImageButton login = (ImageButton) findViewById(R.id.login);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sign = new Intent(Login.this, SignUp.class);
+                startActivity(sign);
+                finish();
+            }
+        });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent App = new Intent(Login.this, MainActivity.class);
+                startActivity(App);
+                finish();
+            }
+        });
     }
 
     @Override

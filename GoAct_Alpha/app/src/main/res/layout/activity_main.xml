@@ -1,6 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:id="@+id/frag"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
     tools:context=".MainActivity">
@@ -8,52 +10,56 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.9"
-        android:background="#666666"
+        android:layout_weight="0.85"
         android:layout_gravity="center_horizontal"></FrameLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.1"
+        android:layout_weight="0.15"
         android:weightSum="1"
         android:layout_gravity="center_horizontal|bottom">
 
+
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40pt"
+            android:layout_height="30pt"
             android:background="@drawable/home"
             android:layout_weight="0.2"
-            android:id="@+id/imageButton" />
+            android:id="@+id/home"
+            android:layout_gravity="bottom" />
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40pt"
+            android:layout_height="30pt"
             android:background="@drawable/map"
             android:layout_weight="0.2"
-            android:id="@+id/imageButton2" />
+            android:id="@+id/map"
+            android:layout_gravity="bottom" />
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/new"
+            android:layout_width="40pt"
+            android:layout_height="35pt"
+            android:background="@drawable/post"
             android:layout_weight="0.2"
-            android:id="@+id/imageButton3" />
+            android:id="@+id/post"
+            android:layout_gravity="bottom" />
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40pt"
+            android:layout_height="30pt"
             android:background="@drawable/user"
             android:layout_weight="0.2"
-            android:id="@+id/imageButton4" />
+            android:id="@+id/imageButton4"
+            android:layout_gravity="bottom" />
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40pt"
+            android:layout_height="30pt"
             android:background="@drawable/settings"
             android:layout_weight="0.2"
-            android:id="@+id/imageButton5" />
+            android:id="@+id/imageButton5"
+            android:layout_gravity="bottom" />
     </LinearLayout>
-
 </LinearLayout>

@@ -1,38 +1,51 @@
 package com.example.jason.goact_beta;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
+    private Fragment home,addevent,user,setting;
+    private FragmentManager fm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageButton home = (ImageButton) findViewById()
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+    protected void onResume() {
+        super.onResume();
+        //Intent Login = new Intent(MainActivity.this, Login.class);
+        //startActivity(Login);
+        //finish();
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    //helper method that removes the current fragment
+    //if you don't remove current fragment and add a new one
+    // the fragments will overlap
+    private void removeFragments() {
+        if (home != null) {
+            fm.beginTransaction().remove(home).commit();
         }
-
-        return super.onOptionsItemSelected(item);
+        if (addevent != null) {
+            fm.beginTransaction().remove(addevent).commit();
+        }
+        if (user != null) {
+            fm.beginTransaction().remove(user).commit();
+        }
+        if (setting != null) {
+            fm.beginTransaction().remove(setting).commit();
+        }
     }
 }

@@ -10,6 +10,10 @@ import android.view.ViewGroup;
 
 import com.example.jason.goact_beta.R;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.EventListener;
+
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
@@ -107,4 +111,15 @@ public class Home extends Fragment {
         public void onFragmentInteraction(Uri uri);
     }
 
+    private class Evententry{
+        public String eventname;
+        public Date time;
+        public String location;
+
+        public Evententry(String eventname, Date time, String location){
+            this.eventname = eventname;
+            this.time = time;
+            this.location = location;
+        }
+    }
 }

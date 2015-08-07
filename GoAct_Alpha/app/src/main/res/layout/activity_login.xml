@@ -1,6 +1,7 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/back_1"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -9,49 +10,42 @@
     tools:context="com.example.jason.goact_beta.Login">
 
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Username"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="147dp" />
+    <ImageButton
+        android:layout_width="60pt"
+        android:layout_height="30pt"
+        android:background="@drawable/login"
+        android:id="@+id/login"
+        android:layout_alignTop="@+id/register"
+        android:layout_gravity="left|bottom" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="numberPassword"
-        android:ems="10"
-        android:id="@+id/editText2"
+    <ImageButton
+        android:layout_width="60pt"
+        android:layout_height="30pt"
+        android:background="@drawable/register"
+        android:id="@+id/register"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right|bottom" />
 
-    <RelativeLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="313dp"
+        android:layout_height="109dp"
+        android:layout_gravity="center">
 
-        <ImageButton
-            android:layout_width="60pt"
-            android:layout_height="30pt"
-            android:background="@drawable/login"
-            android:id="@+id/login"
-            android:layout_gravity="center_vertical" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Username"
+            android:id="@+id/editText" />
 
-        <ImageButton
-            android:layout_width="60pt"
-            android:layout_height="30pt"
-            android:background="@drawable/register"
-            android:text="Sing up"
-            android:id="@+id/register"
-            android:layout_gravity="center_vertical" />
-    </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:id="@+id/editText2" />
+    </LinearLayout>
 
-</RelativeLayout>
+</FrameLayout>
