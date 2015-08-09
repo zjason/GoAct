@@ -1,7 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:id="@+id/frag"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
@@ -11,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.85"
+        android:id="@+id/frag"
         android:layout_gravity="center_horizontal"></FrameLayout>
 
     <LinearLayout
@@ -51,15 +51,16 @@
             android:layout_height="30pt"
             android:background="@drawable/user"
             android:layout_weight="0.2"
-            android:id="@+id/imageButton4"
+            android:id="@+id/user"
             android:layout_gravity="bottom" />
+
 
         <ImageButton
             android:layout_width="40pt"
             android:layout_height="30pt"
             android:background="@drawable/settings"
             android:layout_weight="0.2"
-            android:id="@+id/imageButton5"
+            android:id="@+id/settting"
             android:layout_gravity="bottom" />
     </LinearLayout>
 </LinearLayout>
