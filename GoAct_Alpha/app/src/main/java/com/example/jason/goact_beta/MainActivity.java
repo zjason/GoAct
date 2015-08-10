@@ -19,7 +19,7 @@ import com.example.jason.goact_beta.Fragments.Setting;
 import com.example.jason.goact_beta.Fragments.User;
 
 
-public class MainActivity extends Activity implements Home.OnFragmentInteractionListener, Mapfrag.OnFragmentInteractionListener,AddEvent.OnFragmentInteractionListener,
+public class MainActivity extends Activity implements Home.OnFragmentInteractionListener, Mapfrag.OnFragmentInteractionListener,AddEvent.AddEventInteractionListener,
        User.OnFragmentInteractionListener, Setting.OnFragmentInteractionListener{
 
     private static final String TAG_HOME = "Home";

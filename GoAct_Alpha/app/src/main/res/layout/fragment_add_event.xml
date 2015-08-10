@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.jason.goact_beta.Fragments.AddEvent">
+    tools:context="com.example.jason.goact_beta.Fragments.AddEvent"
+    android:weightSum="1">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -17,7 +18,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/neweventname"
+        android:id="@+id/eventinput"
         android:hint="Event Name"
         android:layout_gravity="center_horizontal" />
 
@@ -27,7 +28,7 @@
         android:inputType="textPersonName"
         android:text="Host Name"
         android:ems="10"
-        android:id="@+id/editText3"
+        android:id="@+id/hostinput"
         android:layout_gravity="center_horizontal" />
 
     <EditText
@@ -36,8 +37,30 @@
         android:inputType="textPostalAddress"
         android:hint="Event Location"
         android:ems="10"
-        android:id="@+id/editText4"
+        android:id="@+id/locationinput"
         android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Price: "
+            android:id="@+id/textView13" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/priceinput"
+            android:layout_weight="1" />
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -52,12 +75,24 @@
             android:text="Event Date: "
             android:id="@+id/textView8" />
 
+        <Spinner
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:id="@+id/monthspin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="/"
+            android:id="@+id/textView11" />
+
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="date"
             android:ems="10"
-            android:id="@+id/editText5"
+            android:id="@+id/dayinput"
             android:layout_weight="1" />
     </LinearLayout>
 
@@ -65,7 +100,8 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -75,12 +111,28 @@
             android:id="@+id/textView9" />
 
         <EditText
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="hours"
+            android:ems="10"
+            android:id="@+id/hourinput"
+            android:layout_weight="0.11" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=":"
+            android:id="@+id/textView12" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
             android:inputType="time"
+            android:hint="mins"
             android:ems="10"
-            android:id="@+id/editText6"
-            android:layout_weight="1" />
+            android:id="@+id/mininput" />
     </LinearLayout>
 
     <LinearLayout
@@ -98,9 +150,15 @@
 
         <Spinner
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner"
-            android:layout_weight="1" />
+            android:layout_height="46dp"
+            android:id="@+id/typespin" />
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:id="@+id/postbutton"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

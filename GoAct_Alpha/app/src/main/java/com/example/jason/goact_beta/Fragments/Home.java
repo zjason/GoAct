@@ -112,14 +112,19 @@ public class Home extends Fragment {
     }
 
     private class Evententry{
-        public String eventname;
-        public Date time;
-        public String location;
+        public String eventName,hostName,location,day,hours,mins,month,type;
+        public float price;
 
-        public Evententry(String eventname, Date time, String location){
-            this.eventname = eventname;
-            this.time = time;
+        public Evententry(String eventname, String hostName, String location, String day, String hours, String mins, String month, String type, float price){
+            this.eventName = eventname;
+            this.hostName = hostName;
             this.location = location;
+            this.day = day;
+            this.hours = hours;
+            this.mins = mins;
+            this.month = month;
+            this.type = type;
+            this.price = price;
         }
     }
 }
