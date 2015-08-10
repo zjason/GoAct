@@ -1,35 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.jason.goact_beta.MainActivity"
-    xmlns:MainActivity="http://schemas.android.com/apk/res-auto">
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.jason.goact_beta.MainActivity">
 
     <item
-        android:id="@+id/action_dash"
+        android:id="@+id/action_home"
         android:icon="@drawable/home"
         android:showAsAction="always"
         android:title="@string/home"/>
 
     <item
-        android:id="@+id/action_social"
+        android:id="@+id/action_map"
         android:icon="@drawable/map"
         android:showAsAction="always"
         android:title="@string/map"/>
 
     <item
-        android:id="@+id/action_messaging"
+        android:id="@+id/action_post"
         android:icon="@drawable/post"
         android:showAsAction="always"
         android:title="@string/post"/>
 
     <item
-        android:id="@+id/action_progress"
+        android:id="@+id/action_user"
         android:icon="@drawable/user"
         android:showAsAction="always"
         android:title="@string/user"/>
 
-    <item
-        android:id="@+id/action_settings"
+    <item android:id="@+id/action_settings"
         android:icon="@drawable/settings"
         android:showAsAction="always"
         android:title="@string/settings"/>
+
 </menu>
