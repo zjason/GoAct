@@ -18,19 +18,31 @@ import com.example.jason.goact_beta.Fragments.Mapfrag;
 import com.example.jason.goact_beta.Fragments.Setting;
 import com.example.jason.goact_beta.Fragments.User;
 
+import java.util.ArrayList;
 
-public class MainActivity extends Activity implements Home.OnFragmentInteractionListener, Mapfrag.OnFragmentInteractionListener,AddEvent.AddEventInteractionListener,
+
+public class MainActivity extends Activity implements Home.HomeInteractionListener, Mapfrag.OnFragmentInteractionListener,AddEvent.AddEventInteractionListener,
        User.OnFragmentInteractionListener, Setting.OnFragmentInteractionListener{
 
     private static final String TAG_HOME = "Home";
     private static final String TAG_MAP = "Mapfrag";
     private static final String TAG_ADDEVENT = "AddEvent";
+
+    @Override
+    public void getlist() {
+        Home h = (Home) fm.findFragmentByTag(TAG_HOME);
+        if(test != null){
+            h.synclist(test);
+        }
+    }
+
     private static final String TAG_USER= "User";
     private static final String TAG_SETTING = "Setting";
 
     private int itemId = 0;
     private Fragment home,map,addevent,user,setting;
     private FragmentManager fm;
+    private ArrayList<Home.Evententry> test = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,5 +162,10 @@ public class MainActivity extends Activity implements Home.OnFragmentInteraction
     @Override
     public void onFragmentInteraction(Uri uri) {
 
+    }
+
+    @Override
+    public void postEvent(Home.Evententry event) {
+        test.add(event);
     }
 }

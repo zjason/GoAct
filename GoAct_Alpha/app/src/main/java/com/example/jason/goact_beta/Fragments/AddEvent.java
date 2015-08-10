@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.provider.CalendarContract;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -109,6 +110,8 @@ public class AddEvent extends Fragment implements AdapterView.OnItemSelectedList
                     day = dayedit.getText().toString();
                     hours = houredit.getText().toString();
                     mins = minedit.getText().toString();
+                    Home.Evententry event = new Home.Evententry(eventName,hostName,location,month,day,hours,mins,type,price);
+                    mListener.postEvent(event);
 
             }
                 else{
@@ -184,6 +187,7 @@ public class AddEvent extends Fragment implements AdapterView.OnItemSelectedList
     public interface AddEventInteractionListener {
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
+        void postEvent(Home.Evententry event);
 
     }
 

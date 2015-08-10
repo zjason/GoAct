@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Event Name"
-        android:id="@+id/eventname"
+        android:id="@+id/eventdisplay"
         android:layout_gravity="center_horizontal" />
 
     <LinearLayout
@@ -17,6 +17,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Type: "
+            android:id="@+id/textView14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/typedispaly" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.27"></LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -30,8 +50,8 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="New Text"
-            android:id="@+id/time"
-            android:layout_weight="0.82" />
+            android:id="@+id/datedisplay"
+            android:layout_weight="0.25" />
     </LinearLayout>
 
     <LinearLayout
@@ -53,15 +73,15 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="New Text"
-            android:id="@+id/location"
-            android:layout_weight="0.82" />
-    </LinearLayout>
+            android:id="@+id/locationdisplay"
+            android:layout_weight="0.98" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Detail"
-        android:id="@+id/detail" />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Detail"
+            android:id="@+id/detail" />
+    </LinearLayout>
 
 </LinearLayout>
