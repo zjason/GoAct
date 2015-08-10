@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/jason/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jar="/Users/icer/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/Users/jason/Dropbox/Android/GoAct_A/GoAct_Alpha/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-6926abd374dbc7582c300d4e4711398341c7d326.jar" />
+        <dex dex="/Users/icer/360/CS_project/GoAct/GoAct_Alpha/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-ca1ea99c1a68ebb3f181ee0e6a9624943681779f.jar" />
     </item>
     <item
-        jar="/Users/jason/Dropbox/Android/GoAct_A/GoAct_Alpha/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/jason/Dropbox/Android/GoAct_A/GoAct_Alpha/app/build/intermediates/pre-dexed/debug/classes-4660d5e0f1aab5f7a814571c0319d41f53cb0561.jar" />
-    </item>
-    <item
-        jar="/Users/jason/Dropbox/Android/GoAct_A/GoAct_Alpha/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jar="/Users/icer/360/CS_project/GoAct/GoAct_Alpha/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/Users/jason/Dropbox/Android/GoAct_A/GoAct_Alpha/app/build/intermediates/pre-dexed/debug/classes-3223df81267b64091c64684f8077254451359ece.jar" />
+        <dex dex="/Users/icer/360/CS_project/GoAct/GoAct_Alpha/app/build/intermediates/pre-dexed/debug/classes-980f5ddd4c09abee436d115646bced7218f5d97c.jar" />
     </item>
     <item
-        jar="/Users/jason/Dropbox/Android/GoAct_A/GoAct_Alpha/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jar="/Users/icer/360/CS_project/GoAct/GoAct_Alpha/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/icer/360/CS_project/GoAct/GoAct_Alpha/app/build/intermediates/pre-dexed/debug/classes-c4c4aaebf24b771f33ac0f7b1dd496df59a7f043.jar" />
+    </item>
+    <item
+        jar="/Users/icer/360/CS_project/GoAct/GoAct_Alpha/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/jason/Dropbox/Android/GoAct_A/GoAct_Alpha/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-7d75681365f5e0d529c57f9e14e3d52f366e34ab.jar" />
+        <dex dex="/Users/icer/360/CS_project/GoAct/GoAct_Alpha/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-05fa181fa0deb12d6165e63b9ec0558cb6a8f225.jar" />
     </item>
 
 </items>
