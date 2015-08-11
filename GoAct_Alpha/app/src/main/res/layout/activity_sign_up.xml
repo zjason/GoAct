@@ -100,9 +100,10 @@
         android:layout_width="match_parent"
         android:layout_height="1pt"
         android:background="#FF6600"
-        android:text="Sign Up"
+        android:text="Register"
+        android:textSize="25dp"
         android:id="@+id/button"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.23" />
+        android:layout_weight="0.20" />
 
 </LinearLayout>
