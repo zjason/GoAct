@@ -37,15 +37,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:hint="Username"
-            android:id="@+id/editText" />
+            android:hint="Email"
+            android:id="@+id/loginemail" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="numberPassword"
-            android:id="@+id/editText2" />
+            android:inputType="textPassword"
+            android:id="@+id/loginpassword" />
     </LinearLayout>
 
 </FrameLayout>

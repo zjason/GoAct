@@ -101,7 +101,7 @@
         android:layout_height="1pt"
         android:background="#FF6600"
         android:text="Sign Up"
-        android:id="@+id/button"
+        android:id="@+id/signup"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.23" />
 

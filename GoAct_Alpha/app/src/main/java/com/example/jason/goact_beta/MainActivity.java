@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -38,6 +39,7 @@ public class MainActivity extends Activity implements Home.HomeInteractionListen
 
     private static final String TAG_USER= "User";
     private static final String TAG_SETTING = "Setting";
+    public static final String myurl = "http://10.0.1.101:3000";
 
     private int itemId = 0;
     private Fragment home,map,addevent,user,setting;
@@ -48,20 +50,16 @@ public class MainActivity extends Activity implements Home.HomeInteractionListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         fm = this.getFragmentManager();
 
-
-
-        //initHomeFragment();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        //Intent Login = new Intent(MainActivity.this, Login.class);
-        //startActivity(Login);
-        //finish();
+        Intent Login = new Intent(MainActivity.this, Login.class);
+        startActivity(Login);
+        finish();
     }
 
     @Override

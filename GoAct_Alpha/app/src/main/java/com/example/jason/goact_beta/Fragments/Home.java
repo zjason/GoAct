@@ -128,6 +128,7 @@ public class Home extends Fragment {
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
         void getlist();
+        //void getdetail();
     }
 
     public void synclist(ArrayList<Evententry> list){
